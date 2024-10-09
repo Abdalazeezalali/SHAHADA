@@ -12,7 +12,7 @@ const useSpeechToText = (options) => {
         recgonitionRef.current=new window.webkitSpeechRecognition()
         const recgonition=recgonitionRef.current
         recgonition.interimResults=options.interimResults || true
-        recgonition.lang=options.lang || "en-US" 
+        recgonition.lang=options.lang || "ar-KSA" 
         recgonition.continuous=options.continuous || false
         if("webkitSpeechGrammarList" in window){
             const grammar="#JSGF V1.0; grammar punctuation; public <punc> = . | , | ? | ! | ; | : ;"
